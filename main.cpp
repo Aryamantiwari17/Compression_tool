@@ -466,7 +466,7 @@ int main()
     string strname;
     cout << "Enter name of the compression string:";
     cin >> strname;
-    timer.start();//.................CALCULATING THE TIME...............
+    timer.start();//.................CALCULATING THE TIME-211132.(DEEP SHEKHAR)..............
     CCCompressionAlgorithm *algo = new CCCompressionAlgorithm(strname);
     algo->getName();
     timer.stop();
@@ -486,7 +486,7 @@ int main()
     // Calculate compression speed
     double compression_speed = timer.calculateCompressionSpeed(original_file_size, compressed_file_size, timer.elapsed_time_.count());
     cout << "Compression speed: " << compression_speed << " bytes per millisecond" << endl;
-    
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     // Code to error handling the compress file-Wriiten By 211112-AAMYA CHAUHAN----------------------------------------------
     int fd1, fd2;
     openfile obj;
