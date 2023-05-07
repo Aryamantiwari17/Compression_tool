@@ -2,7 +2,7 @@
 
 using namespace std;
 //TIME OF A COMUTATION COMPRESSED/DECOMPRESSED FILE CODE IS WRIITEN BY 211132-DEEP SHEKHAR
-class ComputationTimer
+class CComputationTimer
 {
 public:
     chrono::high_resolution_clock::time_point start_time_;
@@ -52,11 +52,11 @@ int main()
     timer.start();
 
     // Do some computation
-    int sum = 0;
+    int isum = 0;
 
     for (int i = 0; i < 100000000; i++)
     {
-        sum += i;
+        isum += i;
     }
 
     timer.stop();
